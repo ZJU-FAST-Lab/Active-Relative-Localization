@@ -6,11 +6,11 @@ We propose an active localization correction system designed to balance the cont
 
 Video Links: [Bilibili](https://www.bilibili.com/video/BV1fZ421b7j2/).
 
-image
+![img](./pic/image.png)
 
 ## Quick Start
 
-We developed the code on Ubuntu 20.04 with ROS Noetic. Theoretically, it should also run on Ubuntu 18.04 and Ubuntu 16.04, but this has not been tested. Please install ROS(Robot Operating System) first following http://www.ros.org. We recommend installing the full-desktop version.
+We developed the code on Ubuntu 20.04 with ROS Noetic. Theoretically, it should also run on Ubuntu 18.04 and Ubuntu 16.04, but this has not been tested. Please install ROS(Robot Operating System) first following http://www.ros.org. 
 
 Run the following commands to setup:
 
@@ -37,7 +37,7 @@ source devel/setup.bash && roslaunch ego_planner rviz.launch
 source devel/setup.bash && roslaunch ego_planner x_formation.launch 
 ```
 
-If you want to compare the difference between using and not using active mutual observation, you can change the parameter ```fsm/active_obs``` to true in ```src/plan_manage/launch/line_formation/advanced_param.xml```
+If you want to compare the difference between using and not using active mutual observation, you can change the parameter ```fsm/active_obs``` to true/false in ```src/plan_manage/launch/line_formation/advanced_param.xml```
 or ```src/plan_manage/launch/x_formation/advanced_param_x.xml```
 
 ```
